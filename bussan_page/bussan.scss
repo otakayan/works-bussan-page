@@ -1,0 +1,148 @@
+// base-----------------------
+body,h1,h2,p,ul,ol,li,dl,dd,dt {
+	margin:0;
+	padding:0;
+}
+html {
+    font-size: 62.5%;
+}
+img {
+    vertical-align: top;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+// variables =========================
+
+.mt-15 {
+    margin-top: 15px;
+} 
+
+// layout -----------------------------
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: url(images/top_image/kage.gif) repeat-y;
+}
+// nav --------------------------------
+.nav_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.nav_item {
+    width: 200px;
+}
+// main -------------------------------
+.main_container {
+    display: grid;
+    grid-template-columns: 155px 428px 155px;
+    padding: 0 15px;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+// left & right =========================
+.left_box, .right_box {
+    width: 155px;
+    margin-top: 15px;
+}
+.left_box_item, .right_box_item {
+    padding: 5px;
+    display: flex;
+
+    &:not(:last-child) {
+        background: url(images/top_image/tensen.gif) no-repeat;
+        background-position: center bottom;
+    }
+    & > img {
+        width: 60px;
+    }
+    & > dl {
+        width: 78px;
+        padding-left: 5px;
+    }
+}
+// center ====================
+
+.center_box {
+    width: 428px;
+    margin-top: 15px;
+}
+.center_box_wrap {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    .center_box_left, .center_box_right > img {
+        width: 209px;
+    }
+}
+.center_box_util_container {
+    display: flex;
+    justify-content: space-between;
+}
+.center_box_util_items {
+    background: url(images/top_image/tensen.gif) no-repeat;
+    background-position: center bottom;
+    margin-top: 10px;
+
+    dl {
+        padding: 5px;
+    }
+    dt {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #851929;
+    }
+    dd {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 1.5rem;
+        color: #851929;
+        margin-left: 5px;
+    }
+}
+
+// common ===========================
+.border_box {
+    border: 1px solid gray;
+}
+.item_title, .item_desc {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.item_desc {
+
+    .small_font {
+        font-size: 1.3rem;
+    }
+}
+.attention {
+    width: 100%;
+}
+.attention li {
+    list-style: inside;
+    font-size: 1.3rem;
+    padding: 0 3px;
+
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+// footer ==============================
+.foot {
+    width: 100%;
+    background: url(images/top_image/footer.jpg);
+    height: 20px;
+    padding-top: 20px;
+
+    .copyright {
+        text-align: center;
+        color: #fff;
+    }
+}
+
